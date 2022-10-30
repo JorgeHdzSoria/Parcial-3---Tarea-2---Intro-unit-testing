@@ -14,4 +14,12 @@ public class RectangleTest {
         Assertions.assertEquals(32, area);
         Assertions.assertEquals(24, perimeter);
     }
+
+    @Test
+    public void testPerimeter() {
+        Rectangle rectangle = new Rectangle(8, 4);
+        double perimeter = rectangle.getPerimeter();
+
+        Assertions.assertEquals(24, perimeter);
+    }
 }
